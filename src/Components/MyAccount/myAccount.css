@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.myAccount-wrapper .top {
+    position: relative;
+    border-bottom: 1px solid #dadada;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 170px;
+}
+
+
+.myAccount-wrapper .top .title h1 {
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 35px;
+    font-family: 'Lato', sans-serif;
+}
+
+.myAccount-wrapper .top span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+}
+
+.myAccount-wrapper .bottom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.myAccount-wrapper .bottom .login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 400px;
+
+}
+
+.myAccount-wrapper .bottom .login-form input {
+    border: 1px solid #dadadada;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    color: black;
+    font-weight: 700;
+}
+
+.myAccount-wrapper .bottom .login-form input:focus {
+    outline: none;
+}
+
+.myAccount-wrapper .bottom .login-form input::placeholder {
+    font-size: 13px;
+    font-weight: 700;
+    color: #7d7d7dda
+}
+
+.myAccount-wrapper .bottom .login-form .remember-me {
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.myAccount-wrapper .bottom .login-form .remember-me input {
+    width: min-content;
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+
+.myAccount-wrapper .bottom .login-form .remember-me span {
+    color: #7d7d7dda;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.myAccount-wrapper .bottom .login-form button {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background-color: #fbe331;
+    font-size: 14px;
+}
+
+.myAccount-wrapper .bottom .login-form button:hover {
+    background-color: #f8c62c;
+}
+
+.myAccount-wrapper .bottom .login-form button .arrowIcon {
+    display: none;
+}
+
+.myAccount-wrapper .bottom .login-form .lost-your-password {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+
+}
+
+.myAccount-wrapper .bottom .login-form .lost-your-password a {
+    font-weight: 700;
+    padding-bottom: 1px;
+    border-bottom: 1px solid black;
+}
+
+/* ! Responsive */
+@media(max-width:991px) {
+    .myAccount-wrapper .bottom .login-form {
+        width: 70%;
+    }
+}
+
+@media(max-width:758px) {
+    .myAccount-wrapper .bottom .login-form {
+        width: 90%;
+    }
+}

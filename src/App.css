@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+a {
+    list-style-type: none;
+}
+
+.section-padding {
+    padding: 1rem 0;
+}
+
+.section-margin {
+    margin: 0 4rem;
+}
+
+
+.content {
+    margin-top: 1rem;
+}
+
+.bigTitle {
+    font-size: 60px;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+@media(max-width:991px) {
+    .section-margin {
+        margin: 0 1rem;
+    }
+}
+
+@media(max-width:758px) {
+    .section-margin {
+        margin: 0 1rem;
+    }
+
+    .bigTitle {
+        margin-right: 0 !important;
+    }
+}

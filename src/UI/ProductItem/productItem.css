@@ -1,0 +1,51 @@
+.product {
+    margin-bottom: 1rem;
+}
+
+.product .productImage {
+    padding: 5rem;
+    background: #F4F4F4;
+    overflow: hidden;
+}
+
+.product .productImage img {
+    transition: all .2s ease-in-out;
+}
+
+.productLink:hover .product .productImage img {
+    transform: scale(1.2);
+}
+
+.productLink .product .product-info {
+    margin-top: 1.2rem;
+}
+
+.productLink .product .product-info .product-title h1 {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    transition: all 5s ease-in-out;
+}
+
+.productLink .product .product-info .product-subinfo p {
+    color: #949691;
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+}
+
+.productLink .product .product-info .product-price {
+    margin-top: 10px;
+}
+
+.productLink .product .product-info .product-price .newPrice {
+    font-weight: 900;
+    font-size: 12px;
+    margin-right: 1rem;
+}
+
+.productLink .product .product-info .product-price .oldPrice {
+    font-weight: 500;
+    font-size: 12px;
+    color: red;
+    text-decoration: line-through;
+}

@@ -1,0 +1,88 @@
+.aboutUs-wrapper .top {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.aboutUs-wrapper .top .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutUs-wrapper .top .text .title {
+    font-weight: 500;
+    color: black;
+    font-size: 2.375rem;
+}
+
+.aboutUs-wrapper .top .text p {
+    color: rgb(60, 60, 60);
+    font-size: 20px;
+    padding: 0 15rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutUs-wrapper .top .imagePeople {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutUs-wrapper .top .subinfos {
+    padding: 0 15rem;
+    display: flex;
+    flex-direction: row !important;
+}
+
+.aboutUs-wrapper .top .subinfos img {
+    height: 70px;
+}
+
+.aboutUs-wrapper .top .subinfos .infos {
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.aboutUs-wrapper .top .subinfos div {
+    width: fit-content;
+}
+
+.aboutUs-wrapper .top .subinfos h5 {
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.aboutUs-wrapper .top .subinfos span {
+    font-size: 14px;
+    color: rgb(68, 67, 67);
+    font-weight: 600;
+}
+
+/* !Responsive */
+@media(max-width:991px) {
+    .aboutUs-wrapper .top .text p {
+        padding: 0 4rem;
+    }
+
+    .aboutUs-wrapper .top .subinfos {
+        padding: 0px 4rem;
+    }
+}
+
+@media(max-width:758px) {
+    .aboutUs-wrapper .top .text p {
+        padding: 0 0rem;
+    }
+
+    .aboutUs-wrapper .top .subinfos {
+        padding: 0px 0rem;
+    }
+}

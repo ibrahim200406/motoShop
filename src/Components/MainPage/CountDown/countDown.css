@@ -1,0 +1,161 @@
+.countDown {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.countDown .background-image {
+    position: absolute;
+    top: -20%;
+    width: 100%;
+}
+
+.countDown .background-image img {
+    position: absolute;
+
+}
+
+.countDown .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+
+.countDown .content .content-left {
+    margin-right: 10rem;
+}
+
+.countDown .content .content-left h1 {
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    font-size: 1.425rem;
+    margin-bottom: 1rem;
+}
+
+.countDown .content .viewAllButton {
+    border: none;
+    border-radius: 2px;
+    color: black;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 15px 25px;
+    background-color: #fbe331;
+    transition: all .2s ease-in-out;
+}
+
+.countDown .content .viewAllButton:hover {
+    background-color: #f8c62c;
+}
+
+.countDown .content .content-right .countdown h2 {
+    color: white !important;
+    font-size: 45px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    padding-bottom: 0;
+    height: 60px;
+
+}
+
+
+.countDown .content .content-right .countdown small {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.countDown .content .content-right .countdown h2,
+.countDown .content .content-right .countdown small {
+    color: white !important;
+    font-family: 'Kanit', sans-serif;
+}
+
+.countDown .content .content-right .countdown .time {
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 130px;
+    height: 130px;
+    padding: 2rem;
+    margin: 2px;
+}
+
+@media(max-width:1285px) {
+
+    .countDown .content .content-left {
+        margin-right: 5rem;
+    }
+}
+
+@media(max-width:991px) {
+
+    .countDown .content .content-left {
+        margin-right: 0;
+    }
+
+    .countDown .content {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .countDown .content .content-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .countDown .background-image {
+        position: absolute;
+        top: 0;
+        width: 150%;
+    }
+
+    .countDown .content .content-left h1 {
+        width: 70%;
+    }
+}
+
+@media(max-width:755px) {
+
+    .countDown {
+        height: 450px;
+    }
+
+    .countDown .content {
+        padding: 3rem;
+    }
+
+
+    .countDown .background-image {
+        position: absolute;
+        top: 0;
+        width: 300%;
+        right: -80%;
+    }
+
+    .countDown .content .content-left h1 {
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .countDown .content .content-right .countdown .time {
+        width: 70px;
+        height: 70px;
+        padding: 1rem;
+    }
+
+    .countDown .content .content-right .countdown h2 {
+        font-size: 25px;
+    }
+}

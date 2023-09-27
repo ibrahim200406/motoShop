@@ -1,0 +1,129 @@
+.sectionAdd {
+    grid-template-columns: 5fr 3fr;
+    gap: 3px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+}
+
+.sectionAdd .left,
+.sectionAdd .right {
+    position: relative;
+    height: 500px;
+}
+
+.sectionAdd .left .left-image,
+.sectionAdd .right .right-image {
+    position: absolute;
+    top: 0;
+}
+
+.sectionAdd div img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+.sectionAdd .content {
+    padding: 2rem 2rem 3rem 2rem;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.263);
+    color: white;
+    z-index: 100;
+}
+
+
+.sectionAdd .content .category-name span {
+    font-weight: 700;
+    font-size: 10px;
+
+}
+
+.sectionAdd .content .title {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.sectionAdd .content .title h1 {
+    font-size: 23px;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+}
+
+.sectionAdd .content .viewAllButton {
+    background-color: #fbe331;
+    color: black;
+    border: black;
+    width: fit-content;
+}
+
+.sectionAdd .content .viewAllButton:hover {
+    background-color: #f8c62c;
+}
+
+/* ! Responsive  */
+@media(max-width:991px) {
+
+    .sectionAdd .left .left-image,
+    .sectionAdd .right .right-image {
+        height: 100%;
+    }
+
+    .sectionAdd {
+        grid-template-columns: 5fr 3fr;
+        gap: 3px;
+        height: 400px;
+        overflow: hidden;
+
+    }
+
+    .sectionAdd .left,
+    .sectionAdd .right {
+        position: relative;
+        height: 400px;
+    }
+
+    .sectionAdd .content {
+        padding: 1.5rem 1.5rem 2.5rem 1.5rem;
+    }
+
+    .sectionAdd .content .title h1 {
+        font-size: 20px;
+    }
+
+}
+
+@media(max-width:758px) {
+    .sectionAdd {
+        height: 500px;
+    }
+
+    .sectionAdd .left,
+    .sectionAdd .right {
+        height: 500px;
+    }
+
+    .sectionAdd {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .sectionAdd .left .left-image,
+    .sectionAdd .right .right-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .sectionAdd .content {
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+
+    .sectionAdd .content .title h1 {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,70 @@
+.categories .title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    z-index: 10000;
+}
+
+.categories .title h1 {
+    font-size: 1.625rem;
+    font-weight: 500;
+}
+
+.categories .category-list {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.4rem;
+}
+
+
+.categories .category-list a:hover .category .category-image img {
+    transform: scale(1.05);
+}
+
+.categories .category-list .category {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.categories .category-list .category .category-image img {
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.categories .category-list .category .category-title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.292);
+    color: white;
+    top: 0;
+}
+
+.categories .category-list .category .category-title h1 {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 25px;
+}
+
+/* ! Responsive */
+@media(max-width:991px) {
+    .categories .category-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+    }
+}
+
+@media(max-width:758px) {
+    .categories .category-list {
+        grid-template-columns: repeat(2, 1fr);
+    }.categories .title h1 {
+        font-size: 1.325rem;
+        font-weight: 500;
+    }
+}

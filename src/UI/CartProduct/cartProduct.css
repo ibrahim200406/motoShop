@@ -1,0 +1,31 @@
+.cartProduct {
+    margin-bottom: 15px;
+}
+
+.cartProduct .product-image {
+    margin-right: 10px;
+}
+
+.cartProduct .product-image img {
+    width: 70px;
+    background-color: #F4F4F4;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+
+.cartProduct .product-infos .title h1 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.cartProduct .product-infos .quantity {
+    font-weight: 700;
+    font-size: 10px;
+    margin: 5px 0;
+
+}
+
+.cartProduct .product-infos .deleteProductButton {
+    font-size: 12px;
+    text-decoration: underline;
+}

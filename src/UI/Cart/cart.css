@@ -1,0 +1,121 @@
+.backdrop {
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.201);
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.offcanvas {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    height: 100vh;
+    width: 330px;
+    background: white;
+    z-index: 1081;
+    padding: 55px;
+    transition: all .2s ease-in-out;
+}
+
+.backdrop.show {
+    visibility: visible;
+}
+
+.offcanvas.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.offcanvas .cart-header .close-offcanvas-button {
+    transition: all .3s ease-in-out;
+    transform: rotate(-90deg);
+
+}
+
+.offcanvas .cart-header .close-offcanvas-button:hover {
+    transform: rotate(90deg);
+}
+
+.offcanvas .cart-header h1 {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.offcanvas .cart-bottom {
+    height: 100%;
+}
+
+.cart-bottom .cart-subinfo {
+    margin-top: 1rem;
+}
+
+.cart-bottom .cart-subinfo .total-price h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.cart-bottom .cart-subinfo .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.cart-bottom .cart-subinfo .buttons .viewCartButton {
+    background-color: white;
+    border: 1px solid #DADADA;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.9rem;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
+}
+
+.cart-bottom .cart-subinfo .buttons .viewCartButton:hover {
+    background-color: #f8c62c;
+}
+
+.cart-bottom .cart-subinfo .buttons .checkOutButton {
+    background-color: #fbe331;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.9rem;
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.cart-bottom .cart-subinfo .buttons .checkOutButton:hover {
+    background-color: #f8c62c;
+}
+
+.cart-bottom .cart-subinfo .buttons .checkOutButton:hover .arrowIcon {
+    transform: rotate(45deg);
+}
+
+.cart-bottom .cart-subinfo .buttons .checkOutButton .arrowIcon {
+    font-weight: 900 !important;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+@media(max-width:758px) {
+    .offcanvas {
+        padding: 35px;
+        
+    }
+}

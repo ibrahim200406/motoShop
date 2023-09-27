@@ -1,0 +1,242 @@
+.breadcrumbs span {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 0.6rem;
+}
+
+.product-detail {
+    background-color: #F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    padding: 5rem;
+
+}
+
+.product-detail .product-image {
+    width: 550px;
+
+}
+
+.product-detail .product-image img {
+    width: 100%;
+
+}
+
+.product-detail .left {
+    padding: 5rem;
+
+}
+
+
+.product-detail .left .product-careousel {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+.product-detail .left .product-careousel img {
+    opacity: 0.6;
+    transition: all .2s ease-in-out;
+
+    padding: 0.5rem;
+}
+
+.product-detail .left .product-careousel img:hover {
+    opacity: 1;
+
+}
+
+.product-detail .left .product-careousel img.active {
+    opacity: 1;
+
+}
+
+.product-detail .right {
+    margin-left: 8rem;
+    margin-right: 5rem;
+
+}
+
+.product-detail .right .product-infos .product-sku {
+    font-size: 0.7875rem;
+    color: #555555;
+    font-weight: 500;
+}
+
+.product-detail .right .product-category {
+    color: #555555;
+    background-color: white;
+    width: fit-content;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    margin-top: 2rem;
+}
+
+
+.product-detail .right .product-category:hover {
+    color: white;
+    background-color: black;
+
+}
+
+.product-detail .right .product-title h1 {
+    font-size: 2.8125rem;
+    margin-top: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+.product-detail .right .product-subinfo p {
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.product-detail .right .product-price {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.product-detail .right .product-quatity {
+    margin-top: 2rem;
+    background-color: white;
+    border: 1px solid #dadadada;
+    width: 130px;
+    padding: 1rem 0.9rem;
+}
+
+.product-detail .right .product-quatity input {
+    width: 100%;
+}
+
+.product-detail .right .product-quatity input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.product-detail .right .add-to-cart-button {
+    margin-top: 2rem;
+}
+
+.product-detail .right .add-to-cart-button button {
+    width: 100%;
+    justify-content: center;
+    padding: 1.5rem 0;
+    background-color: #fbe331;
+}
+
+.product-detail .right .add-to-cart-button button:hover {
+
+    background-color: #f8c62c;
+}
+
+.product-detail .right .add-to-cart-button button .arrowIcon {
+    display: none;
+}
+
+.product-detail .right .description {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 2px solid black;
+}
+
+.product-detail .right .description .title {
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.product-detail .right .description p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.you-may-also-like {
+    margin-top: 7rem;
+}
+
+.you-may-also-like .title {
+    font-size: 30px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+
+}
+
+.you-may-also-like .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+/* !Responsive */
+
+@media(max-width:1285px) {
+    .product-detail .product-image {
+        width: 400px;
+
+    }
+}
+
+@media(max-width:991px) {
+    .product-detail .left {
+        padding: 0rem;
+    }
+
+    .product-detail .right {
+        margin-left: 2rem;
+        margin-right: 0rem;
+    }
+
+    .product-detail .product-image {
+        width: 300px;
+    }
+
+    .product .productImage {
+        padding: 2rem;
+        background: #F4F4F4;
+        overflow: hidden;
+    }
+}
+
+@media(max-width:758px) {
+    .product-detail {
+        padding: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product-detail .right {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-top: 3rem;
+    }
+
+    .product-detail .left .product-image {
+        padding: 1rem;
+    }
+
+    .product-detail .left .product-image img {
+        padding: 0;
+    }
+
+    .product-detail .product-image {
+        width: 100%;
+
+    }
+
+    .you-may-also-like .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}

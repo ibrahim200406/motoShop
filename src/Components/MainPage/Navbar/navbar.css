@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    
+}
+
+.navbar .navbar-center,
+.navbar .navbar-left,
+.navbar .navbar-right {
+    flex: 1;
+}
+
+
+/* * Navbar left start */
+.navbar .toggle-button {
+    display: none;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link- {
+    position: relative;
+
+}
+
+.navbar .navbar-menu-links .navbar-menu-link .items-center {
+    position: relative;
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 20px;
+    cursor: default;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link a:last-child {
+    cursor: pointer;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link a .arrowIcon {
+    margin-left: 4px;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link a span {
+    overflow: hidden;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link a span::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-menu-links .navbar-menu-link a:hover span:before {
+    width: 100%;
+}
+
+
+.navbar .navbar-left .navbar-menu-links {
+    position: relative;
+}
+
+.navbar .navbar-right ul li {
+    height: min-content;
+}
+
+/* * Navbar left end */
+
+
+/* * Navbar center start */
+
+.navbar .navbar-center .navbar-logo {
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* * Navbar center end */
+
+/* * Navbar right start */
+
+.navbar .navbar-right .navbar-menu-links li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.navbar .navbar-right .navbar-menu-links li .icon {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.navbar .navbar-right .navbar-menu-links li span {
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.navbar .navbar-right .navbar-menu-links .search-button {
+    position: relative;
+}
+
+.navbar .navbar-right .navbar-menu-links .search-button::before {
+    position: absolute;
+    content: "";
+    right: -15px;
+    width: 1px;
+    height: 20px;
+    background-color: #DADADA;
+}
+
+.navbar .navbar-right .navbar-menu-links li span::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #333;
+    transition: all 0.3s ease;
+}
+
+.navbar .navbar-right .navbar-menu-links li:hover span::before {
+    width: 100%;
+}
+
+.navbar .navbar-right .navbar-menu-links li .count {
+    color: white;
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+/* * Navbar right end */
+
+
+/* ! Responsive start */
+@media(max-width:991px) {
+    .navbar .toggle-button {
+        display: block;
+    }
+
+    .navbar .navbar-left .navbar-menu-links {
+        display: none;
+
+    }
+
+    .navbar .navbar-right .navbar-menu-links .scheme-toggle,
+    .navbar .navbar-right .navbar-menu-links .my-account {
+        display: none;
+    }
+
+    .navbar .navbar-right .navbar-menu-links .search-button::before {
+        display: none;
+    }
+
+    .navbar .navbar-right {
+        justify-content: flex-end !important;
+    }
+
+    .navbar .navbar-right .navbar-menu-links li {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width:758px) {
+    .navbar .navbar-right .navbar-menu-links li span {
+        display: none;
+    }    .navbar .navbar-right .navbar-menu-links li {
+        margin-left: 5px;
+    }.navbar .navbar-right .navbar-menu-links li .count {
+        margin-left: 2px;
+    }
+}

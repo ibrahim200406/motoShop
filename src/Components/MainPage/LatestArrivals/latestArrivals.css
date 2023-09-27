@@ -1,0 +1,32 @@
+.latest-arrivals .title {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    z-index: 10000;
+}
+
+.latest-arrivals .title h1 {
+    font-size: 1.625rem;
+    font-weight: 500;
+}
+
+.latest-arrivals .products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+/* ! Responsive */
+
+@media(max-width:991px) {
+    .latest-arrivals .products {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+}
+
+@media(max-width:758px) {
+    .product .productImage {
+        padding: 2rem;
+    }
+
+}

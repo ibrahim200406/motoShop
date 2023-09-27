@@ -1,0 +1,44 @@
+.navbar-hover-links {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    background-color: transparent;
+    top: 30px;
+    left: 0;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all .2s ease-in-out;
+    z-index: 100000000;
+}
+
+.navbar-hover-links:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-hover-links.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-hover-link {
+    width: 200px;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid #dedede;
+}
+
+.navbar-hover-link:hover a {
+    color: #8D8D8D;
+}
+
+.navbar-hover-link a {
+    display: flex;
+    width: max-content !important;
+    transition: all .2s ease-in-out;
+}
